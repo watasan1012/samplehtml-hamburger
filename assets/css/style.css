@@ -1,0 +1,134 @@
+.noscroll {
+    overflow: hidden;
+}
+
+.header {
+    align-items: center;
+    background-color: #1b1310;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 74px;
+    padding: 0 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 120px;
+    }
+}
+
+.nav-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: opacity .5s;
+    z-index: 2;
+    background-color: #1b1310;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-wrapper {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        top: auto;
+    }
+}
+
+.nav-wrapper.fade {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        list-style-type: none;
+        gap: 55px;
+        align-items: center;
+    }
+}
+
+.nav-item {
+    margin-bottom: 40px;
+}
+
+.nav-item:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-item {
+        margin-bottom: auto;
+    }
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.burger-btn {
+    display: block;
+    height: 39px;
+    position: relative;
+    width: 39px;
+    z-index: 3;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    .burger-btn {
+        display: none;
+    }
+}
+
+.bar {
+    background-color: #fff;
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+}
+
+.bar_top {
+    top: 10px;
+}
+
+.burger-btn.close .bar_top {
+    transform: translate(-50%, 10px) rotate(45deg);
+    transition: transform .3s;
+}
+
+.bar_mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.bar_bottom {
+    bottom: 10px;
+}
+
+.burger-btn.close .bar_bottom {
+    transform: translate(-50%, -8px) rotate(-45deg);
+    transition: transform .3s;
+}
