@@ -46,7 +46,6 @@ table {
 input,
 textarea {
     user-select: auto;
-    user-select: auto;
 }
 
 textarea {
@@ -54,7 +53,6 @@ textarea {
 }
 
 meter {
-    appearance: revert;
     appearance: revert;
 }
 
@@ -81,13 +79,12 @@ pre {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     user-select: auto;
-    user-select: auto;
 }
 
 :where([draggable='true']) {
     -webkit-user-drag: element;
 }
 
-:where(dialog:modal) {
+/* :where(dialog:modal) {
     all: revert;
-}
+} */

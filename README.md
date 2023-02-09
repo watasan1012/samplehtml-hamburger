@@ -203,3 +203,17 @@ opacityがvisibilityより先に来ることを期待期待した
 ```
 
 セレクタ名は、スネークケース`.bar_top` ではなく、ケバブケース が望ましいです。
+
+```
+ 49:5   ✖  Unexpected duplicate       declaration-block-no-duplicate-properties
+           "user-select"
+```
+
+プロパティの重複をチェックする
+
+```
+ 88:14  ✖  Unexpected unknown pseudo-class     selector-pseudo-class-no-unknown
+           selector ":modal"
+```
+
+擬似クラスの名前があっているかをチェックする

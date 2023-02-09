@@ -105,30 +105,30 @@
     width: 20px;
 }
 
-.bar_top {
+.bar-top {
     top: 10px;
 }
 
-.burger-btn.close .bar_top {
+.burger-btn.close .bar-top {
     transform: translate(-50%, 10px) rotate(45deg);
     transition: transform .3s;
 }
 
-.bar_mid {
+.bar-mid {
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.burger-btn.close .bar_mid {
+.burger-btn.close .bar-mid {
     opacity: 0;
     transition: opacity .3s;
 }
 
-.bar_bottom {
+.bar-bottom {
     bottom: 10px;
 }
 
-.burger-btn.close .bar_bottom {
+.burger-btn.close .bar-bottom {
     transform: translate(-50%, -8px) rotate(-45deg);
     transition: transform .3s;
 }
