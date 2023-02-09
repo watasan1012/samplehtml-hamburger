@@ -79,7 +79,15 @@
 
 .nav-item a {
     color: #fff;
+    white-space: nowrap;
 }
+
+@media screen and (min-width: 768px) {
+    .nav-item a {
+        color: #e56d81;
+    }
+}
+
 
 .burger-btn {
     background-color: #ecb0ba;

@@ -217,3 +217,8 @@ opacityがvisibilityより先に来ることを期待期待した
 ```
 
 擬似クラスの名前があっているかをチェックする
+
+
+## バリデーションをする
+
+https://validator.nu/#textarea
