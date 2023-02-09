@@ -1,4 +1,4 @@
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, audio, svg *, symbol *)) {
     all: unset;
     display: revert;
 }
@@ -14,12 +14,12 @@ html {
 }
 
 body {
+    background-color: #fff;
     color: #383838;
     font-family: 'M PLUS Rounded 1c', Arial, Meiryo, sans-serif;
     font-weight: 500;
     letter-spacing: 0.07em;
     line-height: 1.7;
-    background-color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -35,8 +35,8 @@ menu {
 }
 
 img {
-    max-inline-size: 100%;
     max-block-size: 100%;
+    max-inline-size: 100%;
 }
 
 table {
@@ -45,7 +45,7 @@ table {
 
 input,
 textarea {
-    -webkit-user-select: auto;
+    user-select: auto;
     user-select: auto;
 }
 
@@ -54,7 +54,7 @@ textarea {
 }
 
 meter {
-    -webkit-appearance: revert;
+    appearance: revert;
     appearance: revert;
 }
 
@@ -74,17 +74,17 @@ pre {
     display: none;
 }
 
-:where([contenteditable]:not([contenteditable="false"])) {
-    -moz-user-modify: read-write;
-    -webkit-user-modify: read-write;
-    overflow-wrap: break-word;
+:where([contenteditable]:not([contenteditable='false'])) {
     -webkit-line-break: after-white-space;
     line-break: after-white-space;
-    -webkit-user-select: auto;
+    overflow-wrap: break-word;
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    user-select: auto;
     user-select: auto;
 }
 
-:where([draggable="true"]) {
+:where([draggable='true']) {
     -webkit-user-drag: element;
 }
 
