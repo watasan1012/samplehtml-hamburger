@@ -4,7 +4,8 @@
 
 .header {
     align-items: center;
-    background-color: #1b1310;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
     display: flex;
     flex-direction: row-reverse;
     height: 74px;
@@ -18,7 +19,7 @@
 }
 
 .nav-wrapper {
-    background-color: #1b1310;
+    background-color: #ecb0ba;
     height: 100vh;
     left: 0;
     opacity: 0;
@@ -63,6 +64,7 @@
 
 .nav-item {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .nav-item:last-child {
@@ -80,11 +82,12 @@
 }
 
 .burger-btn {
-    background-color: transparent;
+    background-color: #ecb0ba;
     border: none;
+    border-radius: 50%;
     display: block;
     height: 39px;
-    position: relative;
+    position: fixed;
     width: 39px;
     z-index: 3;
 }
