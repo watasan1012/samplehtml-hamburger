@@ -9,12 +9,16 @@
     flex-direction: row-reverse;
     height: 74px;
     padding: 0 5%;
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .header {
-        box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+        box-shadow: 0 3px 6px rgb(0 0 0 / 16%); 
+        overflow: hidden;
         padding: 0 120px;
+        position: fixed;
     }
 }
 
@@ -48,6 +52,7 @@
 .nav-list {
     display: block;
     left: 50%;
+    list-style-type: none;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -58,7 +63,6 @@
         align-items: center;
         display: flex;
         gap: 55px;
-        list-style-type: none;
     }
 }
 
@@ -79,6 +83,8 @@
 
 .nav-item a {
     color: #fff;
+    font-weight:bold;
+    text-decoration: none;
     white-space: nowrap;
 }
 
@@ -87,7 +93,6 @@
         color: #e56d81;
     }
 }
-
 
 .burger-btn {
     background-color: #ecb0ba;
